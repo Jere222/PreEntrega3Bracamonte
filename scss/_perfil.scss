@@ -1,0 +1,86 @@
+/*Perfil*/
+.somosBody {
+    min-height: 100vh;
+    background: linear-gradient(rgb(8, 3, 20), rgb(58, 31, 133));
+    .contenedorPerfil {  
+        @include FlexCenter(column, 1.5rem, 1.5rem);
+    }
+    header {
+        background-color: transparent;
+        width: 100%;
+        left: 0;
+        nav {
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            display: block;
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                row-gap: 0;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: rgb(4, 4, 14);
+                        
+                    }
+                }
+                .menuUno {
+                    background-color: rgb(194, 215, 229);
+                }
+                .menuDos {
+                    background-color: rgb(166, 193, 221);
+                }
+                .menuTres {
+                    background-color: rgb(146, 181, 196);
+                }
+                .menuCuatro {
+                    background-color: rgb(115, 152, 168);
+                }
+                .menuCinco {
+                    background-color: rgb(106, 136, 153);
+                }
+            }
+            
+        }
+    }
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 1rem 0rem;
+        .logoMasTexto {
+            @include FlexCenter(column, 5rem, 0);
+            width: 80%;
+            padding: 3rem 0 0;
+            .imgLogo {
+                border-radius: 4px;
+                width: 80%;
+            }
+            p {
+                text-align: center;
+                color: $colorProducto;
+                width: 100%;
+                height: 9.5rem;
+                overflow: scroll;
+            }
+        }
+        .imgValija {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .footerSomos {
+        background-color: transparent;
+        height: 3rem;
+        position: relative;
+        .iconosRedesSoc{
+            img {
+                height: 3rem;
+                border-radius: 10px;
+            }
+        }
+    }
+}

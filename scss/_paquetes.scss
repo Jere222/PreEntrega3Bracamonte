@@ -1,0 +1,40 @@
+/*paquetes*/
+.contenedorPaquetes {
+    display: flex;
+    justify-content: center;
+    row-gap: 0.5rem;
+    flex-wrap: wrap;
+    .contenedor{
+        display: grid;
+        grid-template-rows: 3rem 13rem 13rem;
+        gap: 3rem;
+        .subtitulosMain {
+            margin-top: 0;
+        }
+    }
+}
+
+.paquete {
+    @extend .producto;
+    @include FlexCenter(row, 0.5rem, 0.5rem);
+    padding: 1rem;
+    img {
+        width: 40%;
+        height: 8rem;
+    }
+
+    .textoPaquete {
+        width: 60%;
+        @include FlexCenter(column, 0.5rem, 0.5rem);
+
+        .nombrePaquete {
+            text-shadow: 1px 1px 0.1rem rgb(147, 160, 128);
+        }
+
+        .parrafoPaquete {
+            height: 4.5rem;
+            overflow: scroll;
+            width: 80%;
+        }
+    }
+}

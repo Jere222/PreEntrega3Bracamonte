@@ -1,0 +1,24 @@
+/*Footer*/
+footer {
+        background-color: $colorHeader;
+        color: $colorTexto;
+        @include FlexCenter(column, 0, 0);
+        text-align: center;
+        height: 12rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    img {
+        border-radius: 25px;
+        height: 4.5rem;
+    }
+    img:hover {
+        box-shadow: 1px 1px 0.3rem black;
+        transform: scale(0.9);
+    }
+    .iconosRedesSoc {
+        display: flex;
+        gap: 1rem;
+    }
+}

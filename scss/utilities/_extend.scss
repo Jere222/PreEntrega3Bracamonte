@@ -1,0 +1,27 @@
+.producto {
+    background-color: $colorProducto;
+    box-shadow: 2px 1.5px 0.4rem rgb(177, 171, 171);
+    width: 100%;
+    color: $colorTexto;
+    border-radius: 10px;
+    .precioBoton {
+        @include FlexCenter(row, 0, 2rem);
+        .precio {
+            font-size: 1.12rem;
+        }
+
+        .boton {
+            text-align: center;
+            padding: 0.4rem;
+            background-color: rgb(176, 141, 192);
+            border-radius: 0.7rem;
+            box-shadow: 1px 1px 0.1rem;
+            font-size: 0.83rem;
+        }
+
+        .boton:hover {
+            background-color: rgb(230, 170, 217);
+        }
+    }
+
+}

@@ -1,0 +1,59 @@
+/*Tours*/
+.tour {
+    @extend .producto;
+    @include FlexCenter(column, 1rem, 0);
+    padding: 0.5rem;
+
+    .imgMasTexto {
+        display: flex;
+        height: 6rem;
+
+        .imgTour {
+            height: 3rem;
+            display: grid;
+            grid-template-areas:
+                "principal img2"
+                "principal img3"
+                "principal signoMas";
+            gap: 0.2rem;
+
+            .mainImg {
+                width: 9rem;
+                height: 6rem;
+                grid-area: principal;
+            }
+
+            .img2 {
+                width: 2rem;
+                height: 2rem;
+                grid-area: img2;
+            }
+
+            .img3 {
+                width: 2rem;
+                height: 2rem;
+                grid-area: img3;
+            }
+
+            .imgMas {
+                width: 2rem;
+                height: 2rem;
+                grid-area: signoMas;
+            }
+
+            .otrasImg {
+                display: none;
+            }
+
+        }
+
+        h3 {
+            white-space: nowrap;
+        }
+
+        p {
+            overflow: scroll;
+        }
+
+    }
+}

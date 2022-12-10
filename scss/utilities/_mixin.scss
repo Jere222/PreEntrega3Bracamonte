@@ -1,0 +1,12 @@
+@mixin medidasImgPaquete {
+    width: 8rem;
+    height: 5rem;
+}
+@mixin FlexCenter($dir, $r-gap, $c-gap){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $dir;
+    row-gap: $r-gap;
+    column-gap: $c-gap;
+}

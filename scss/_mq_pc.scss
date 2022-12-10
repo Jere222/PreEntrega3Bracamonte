@@ -1,0 +1,216 @@
+/*mq para pc*/
+@media (min-width: 1100px) {
+    body {
+        padding-bottom: 11rem;
+    }
+
+    header {
+        padding: 0 4rem;
+
+        h1 {
+            display: block;
+        }
+    }
+
+    .contenedor {
+        padding: 1.5rem 10rem 2rem;
+    }
+
+    /*Carousel*/
+    main {
+        .mainCarousel {
+            padding: 3rem 20rem;
+        }
+    }
+
+    /*Paquete*/
+    .contenedorPaquetes {
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .contenedor {
+            width: auto;
+            display: grid;
+            grid-template-rows: 3rem 15rem 15rem;
+        }
+    }
+
+    .paquete {
+        height: 15rem;
+    }
+
+    .paqueteHome {
+        gap: 5rem;
+        height: auto;
+
+        img {
+            height: 12rem;
+        }
+
+        .textoPaquete {
+            align-items: flex-start;
+            row-gap: 2rem;
+
+            h3 {
+                margin-left: 2rem;
+            }
+
+            .precioBoton {
+                margin-left: 1rem;
+            }
+
+            .parrafoPaquete {
+                width: 100%;
+                height: 6rem;
+            }
+        }
+    }
+
+    /*Tours*/
+    .tour {
+        height: 20rem;
+
+        .imgMasTexto {
+            @include FlexCenter(column, 0, 0);
+            height: auto;
+            position: relative;
+            bottom: 1.5rem;
+
+            p {
+                text-align: center;
+                height: auto;
+                width: 70%;
+                overflow: auto;
+            }
+
+            .imgTour {
+                display: flex;
+                column-gap: 2rem;
+
+                .imgMas {
+                    display: none;
+                }
+
+                .otrasImg {
+                    display: block;
+                }
+
+                .mainImg {
+                    @include medidasImgPaquete;
+                }
+
+                .img2 {
+                    @include medidasImgPaquete;
+                }
+
+                .img3 {
+                    @include medidasImgPaquete;
+                }
+
+                img {
+                    @include medidasImgPaquete;
+                }
+            }
+
+        }
+
+        h3 {
+            position: relative;
+            bottom: 1rem;
+        }
+
+        .precioBoton {
+            position: relative;
+            top: 1rem;
+        }
+    }
+
+    /*excursiones*/
+    .containerExcHome {
+        display: block;
+        display: flex;
+        flex-wrap: nowrap;
+        
+        height: 22rem;
+    }
+
+    .excursionHome {
+        display: none;
+    }
+
+    /*perfil*/
+    .somosBody {
+        padding: 5rem 15em;
+
+        header {
+            nav {
+                background-color: $colorHeader;
+
+                ul {
+                    display: block;
+                    @include FlexCenter(row, 0, 2rem);
+                    list-style: none;
+                    height: 4.5rem;
+
+                    .menuUno {
+                        background-color: transparent;
+                    }
+
+                    .menuDos {
+                        background-color: transparent;
+                    }
+
+                    .menuTres {
+                        background-color: transparent;
+                    }
+
+                    .menuCuatro {
+                        background-color: transparent;
+                    }
+
+                    .menuCinco {
+                        background-color: transparent;
+                    }
+
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: $colorTexto;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        main {
+            gap: 5rem;
+
+        }
+
+        .logoMasTexto {
+            gap: 5rem;
+        }
+
+        .imgLogo {
+            height: 4rem;
+            width: 15rem;
+        }
+
+        .logoMasTexto p {
+            width: 25rem;
+        }
+
+        .footerSomos {
+            position: relative;
+            bottom: 3rem;
+        }
+    }
+
+    /*footer*/
+    footer {
+        height: 10rem;
+    }
+}

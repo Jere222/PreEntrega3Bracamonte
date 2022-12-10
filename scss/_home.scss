@@ -1,0 +1,55 @@
+/*Home y detalles de excursiones*/
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 2rem;
+    row-gap: 1.5rem;
+}
+
+main {
+    .subtitulosMain {
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+        color: $colorProducto;
+        border-bottom: solid;
+    }
+
+    .mainCarousel {
+        padding: 1.5rem 6rem;
+        .imgCarousel {
+           
+        }
+    }
+}
+
+.excursionHome {
+    @extend .producto;
+    @include FlexCenter(column, 0rem, 0);
+    padding: 1rem;
+    img {
+        height: 8rem;
+        width: 15rem;
+    }
+
+    .tituloBoton {
+        @include FlexCenter(column, 0, 1rem);
+        flex-wrap: wrap;
+        
+    }
+    .precioBotonExc {
+        @include FlexCenter(row, 2rem, 2rem)
+    }
+}
+
+.carta {
+    align-items: center;
+}
+
+.containerExcHome {
+    display: none;
+}
+.imgExc {
+    transform: scale(0.8,0.84);
+    position: relative;
+    bottom: 0.4rem;
+}

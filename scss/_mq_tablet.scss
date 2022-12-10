@@ -1,0 +1,83 @@
+/*mq para tablets*/
+@media (min-width: 576px) {
+    header {
+        h1 {
+            display: none;
+        }
+
+        nav {
+            display: block;
+
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+            }
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $colorTexto;
+                }
+
+
+            }
+
+        }
+
+        .menuDesplegable {
+            display: none;
+        }
+    }
+
+    .contenedor {
+        padding: 1.5rem 5rem 2rem;
+        row-gap: 3rem;
+    }
+
+    /*tours*/
+    .tour {
+        padding: 1rem;
+
+        .imgMasTexto {
+            display: flex;
+            justify-content: center;
+            column-gap: 2rem;
+
+            p {
+                width: 40%;
+
+            }
+        }
+    }
+
+    /*Paquetes*/
+    .contenedorPaquetes {
+        padding: 2rem 0 3rem;
+
+        .contenedor {
+            min-width: 25rem;
+            width: 70%;
+            padding: 0 2rem;
+        }
+    }
+
+    main {
+        .mainCarousel {
+            padding: 3rem 10rem;
+        }
+    }
+
+
+    /*Excursiones*/
+    .excursionHome {
+        .tituloBoton {
+            @include FlexCenter(row, 0, 10rem);
+        }
+
+        img {
+            height: 12rem;
+        }
+    }
+
+}

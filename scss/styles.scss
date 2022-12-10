@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Utilidades*/
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/extend";
+
+body {
+    background-color: $colorFondo;
+    font-family: 'Montserrat', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 13rem;
+    padding-top: 5rem; 
+}
+
+
+@import "header";
+@import "home";
+@import "tours";
+@import "paquetes";
+@import "perfil";
+@import "footer";
+@import "mq_tablet";
+@import "mq_pc";
+
